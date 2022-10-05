@@ -11,10 +11,10 @@ public class RespondaBuilder {
         if(responda.getIdProcurar().equals("")){
             throw new IllegalArgumentException("Pesquisa inválida\n");
         }
-        if (responda.getNps() < 0 ) {
+        if (responda.getNumeracaoPontoSolucao() < 0 ) {
             throw new IllegalArgumentException("NPS precisa ser positivo\n");
         }
-        if(responda.getNps() > 10){
+        if(responda.getNumeracaoPontoSolucao() > 10){
             throw new IllegalArgumentException("NPS precisa ser menor que onze\n");
         }
         return responda;
@@ -32,7 +32,7 @@ public class RespondaBuilder {
         return  this;
     }
     public RespondaBuilder setNps(int nps) {
-        responda.setNps(nps);
+        responda.setNumeracaoPontoSolucao(nps);
         return this;
     }
 

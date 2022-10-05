@@ -28,11 +28,11 @@ public class Responda {
         this.idProcurar = idProcurar;
     }
 
-    public int getNps() {
+    public int getNumeracaoPontoSolucao() {
         return nps;
     }
 
-    public void setNps(int nps) {
+    public void setNumeracaoPontoSolucao(int nps) {
         this.nps = nps;
     }
 
