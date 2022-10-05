@@ -50,7 +50,7 @@ class RespondaBuilderTest {
                 .setNps(9)
                 .setIdCliente("idCliente")
                 .setIdPagina("idPagina")
-                .setIdPagina("idProcurar")
+                .setIdProcurar("idProcurar")
                 .build();
         assertNotNull(responda);
     }
