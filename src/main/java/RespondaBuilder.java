@@ -9,13 +9,13 @@ public class RespondaBuilder {
 
     public Responda build() {
         if(responda.getIdProcurar().equals("")){
-            throw new IllegalArgumentException("Pesquisa inválida\n");
+            throw new IllegalArgumentException("Pesquisa inválida");
         }
         if (responda.getNumeracaoPontoSolucao() < 0 ) {
-            throw new IllegalArgumentException("NPS precisa ser positivo\n");
+            throw new IllegalArgumentException("NPS precisa ser positivo");
         }
         if(responda.getNumeracaoPontoSolucao() > 10){
-            throw new IllegalArgumentException("NPS precisa ser menor que onze\n");
+            throw new IllegalArgumentException("NPS precisa ser menor que onze");
         }
         return responda;
     }
